@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charitha Ande | AI Engineer</title>
+<meta name="description" content="Charitha Ande, AI engineer building reliable LLM systems. MS Data Science at the University of North Texas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef; --surface:#ffffff; --ink:#18212f; --muted:#5b6473; --line:#e2ddd3;
+  --accent:#0f6e5a; --accent-soft:#e3f1ec; --chip:#efece5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#11161d; --surface:#18202a; --ink:#e9edf2; --muted:#9aa5b4; --line:#27313d;
+    --accent:#4cc3a2; --accent-soft:#163029; --chip:#202a35;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#11161d; --surface:#18202a; --ink:#e9edf2; --muted:#9aa5b4; --line:#27313d;
+  --accent:#4cc3a2; --accent-soft:#163029; --chip:#202a35;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+nav .logo{font-family:Fraunces,serif;font-weight:700;font-size:18px;color:var(--ink)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
+nav ul a{color:var(--muted)}
+nav ul a:hover{color:var(--ink);text-decoration:none}
+header{padding:88px 0 64px}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--accent);letter-spacing:.04em}
+h1{font-family:Fraunces,serif;font-weight:700;font-size:clamp(40px,7vw,64px);line-height:1.05;margin:14px 0 18px;letter-spacing:-.02em}
+.lede{font-size:clamp(18px,2.4vw,21px);color:var(--muted);max-width:620px}
+.lede strong{color:var(--ink);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;font-weight:600;font-size:15px;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{text-decoration:none;opacity:.88}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:Fraunces,serif;font-weight:500;font-size:30px;margin-bottom:26px;letter-spacing:-.01em}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat b{display:block;font-family:Fraunces,serif;font-size:30px;color:var(--accent);line-height:1.1}
+.stat span{font-size:14px;color:var(--muted)}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;margin-bottom:18px}
+.proj.feature{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.proj-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.proj h3{font-size:20px;font-weight:600}
+.tag{font-family:"JetBrains Mono",monospace;font-size:12px;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+.proj p{color:var(--muted);margin:10px 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-family:"JetBrains Mono",monospace;font-size:12px;background:var(--chip);padding:4px 10px;border-radius:6px;color:var(--ink)}
+.flow{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:16px 0;font-size:13px}
+.flow div{border:1px dashed var(--line);border-radius:8px;padding:6px 10px;background:var(--bg)}
+.flow i{color:var(--accent);font-style:normal}
+.job{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:none}
+.job .when{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--muted);padding-top:3px}
+.job h3{font-size:17px;font-weight:600}
+.job .org{color:var(--muted);font-size:15px;margin-bottom:8px}
+.job ul{padding-left:18px;color:var(--ink)}
+.job li{margin-bottom:4px}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.skills h4{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px;font-weight:600}
+footer{padding:56px 0 72px;border-top:1px solid var(--line)}
+footer p{color:var(--muted)}
+.contact{display:flex;flex-wrap:wrap;gap:20px;margin-top:16px;font-weight:500}
+.toggle{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:4px 10px;font-size:13px;cursor:pointer;margin-left:16px}
+@media (max-width:640px){
+  nav ul{display:none}
+  .stats{grid-template-columns:1fr}
+  .job{grid-template-columns:1fr;gap:4px}
+  .skills{grid-template-columns:1fr}
+  header{padding:56px 0 44px}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#top">Charitha Ande</a>
+  <div style="display:flex;align-items:center">
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button>
+  </div>
+</div></nav>
+
+<main class="wrap" id="top">
+<header>
+  <div class="eyebrow">AI ENGINEER · DENTON, TX</div>
+  <h1>I build AI systems that hold up under real use.</h1>
+  <p class="lede">I'm an MS Data Science student at the <strong>University of North Texas</strong> (May 2027) with <strong>3 years of professional Python experience</strong>. I care about the parts most demos skip: load testing, evaluation, and reliability.</p>
+  <div class="cta">
+    <a class="btn primary" href="Charitha_Ande_Resume.pdf">Download resume</a>
+    <a class="btn ghost" href="#projects">See my work</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>40%</b><span>less manual testing from frameworks I built at Colruyt</span></div>
+    <div class="stat"><b>20%</b><span>faster response time, helped by performance testing I ran</span></div>
+    <div class="stat"><b>3.86</b><span>GPA, MS Data Science at UNT</span></div>
+  </div>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <article class="proj feature">
+    <div class="proj-head"><h3>SkyMind: AI Orchestration Platform</h3><span class="tag">in progress</span></div>
+    <p>Describe what you need (expected users, latency target, memory type, budget) and SkyMind plans the capacity, deploys an LLM chatbot on Kubernetes, and scales it with the load.</p>
+    <div class="flow" aria-label="SkyMind architecture">
+      <div>User spec</div><i>→</i><div>Capacity planner</div><i>→</i><div>Kubernetes deploy</div><i>→</i><div>Chatbot + memory + routing</div><i>→</i><div>Metrics &amp; load tests</div>
+    </div>
+    <div class="chips"><span>Python</span><span>FastAPI</span><span>LLM APIs</span><span>Redis</span><span>pgvector</span><span>Docker</span><span>Kubernetes</span></div>
+    <p style="margin:14px 0 0"><a href="https://github.com/charitha1081/skymind">View on GitHub →</a></p>
+  </article>
+
+  <article class="proj">
+    <div class="proj-head"><h3>Compliance Automation at UNT</h3><span class="tag">at work</span></div>
+    <p>Python scripts that automatically flag discrepancies in IT compliance data from ServiceNow and SharePoint, and an LLM-based workflow that categorizes and summarizes tickets.</p>
+    <div class="chips"><span>Python</span><span>LLMs</span><span>ServiceNow</span><span>Power BI</span></div>
+  </article>
+
+  <article class="proj">
+    <div class="proj-head"><h3>Student Performance Prediction</h3><span class="tag">2025</span></div>
+    <p>Regression and classification models that predict student grades from demographic and activity data, improved with feature engineering and hyperparameter tuning.</p>
+    <div class="chips"><span>Python</span><span>Pandas</span><span>scikit-learn</span></div>
+  </article>
+
+  <article class="proj">
+    <div class="proj-head"><h3>Vehicle Rental and Hosting App</h3><span class="tag">2022</span></div>
+    <p>A full-stack Android app for listing, searching, and booking vehicles, with user authentication and database-backed booking workflows.</p>
+    <div class="chips"><span>Android</span><span>Firebase</span></div>
+  </article>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="when">Apr 2026 – now</div>
+    <div>
+      <h3>Data &amp; AI Engineer (Student Assistant)</h3>
+      <div class="org">University of North Texas · IT Compliance</div>
+      <ul>
+        <li>Developing Python scripts that flag compliance data discrepancies automatically, replacing manual reconciliation.</li>
+        <li>Building an LLM-based workflow that categorizes and summarizes ServiceNow tickets.</li>
+        <li>Build and maintain Power BI dashboards that track compliance metrics.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="job">
+    <div class="when">Jun 2022 – Jul 2025</div>
+    <div>
+      <h3>Development &amp; Test Automation Engineer</h3>
+      <div class="org">Colruyt Group India · joined as intern, Mar 2022</div>
+      <ul>
+        <li>Built Python applications and automation for data processing, validation, and backend integration.</li>
+        <li>Designed data-driven test frameworks (Python, Selenium, TestNG) that cut manual testing by 40% and raised coverage by 30%.</li>
+        <li>Ran load and performance tests (JMeter, LoadRunner) that contributed to a 20% faster application response time.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h4>Languages</h4><div class="chips"><span>Python</span><span>SQL</span><span>Java</span><span>C</span></div></div>
+    <div><h4>AI / ML</h4><div class="chips"><span>scikit-learn</span><span>Pandas</span><span>NumPy</span><span>LLM APIs</span><span>NLTK</span><span>spaCy</span></div></div>
+    <div><h4>Testing &amp; Performance</h4><div class="chips"><span>Selenium</span><span>TestNG</span><span>JMeter</span><span>LoadRunner</span></div></div>
+    <div><h4>Data &amp; Tools</h4><div class="chips"><span>PySpark</span><span>MySQL</span><span>Power BI</span><span>Tableau</span><span>Git</span></div></div>
+  </div>
+</section>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <h2>Let's talk</h2>
+  <p>I'm looking for full-time AI engineer roles starting in 2027.</p>
+  <p style="margin-top:8px">Originally from Vijayawada, now in Denton. Outside of tech I love cooking, drawing, fitness, and travel.</p>
+  <div class="contact">
+    <a href="mailto:gangande6@gmail.com">gangande6@gmail.com</a>
+    <a href="https://linkedin.com/in/charithasri-ganga-ande-245847202">LinkedIn</a>
+    <a href="https://github.com/charitha1081">GitHub</a>
+  </div>
+</div></footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('themeBtn'), root=document.documentElement;
+  try{var saved=localStorage.getItem('theme'); if(saved) root.setAttribute('data-theme',saved);}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark = root.getAttribute('data-theme')==='dark' ||
+      (!root.getAttribute('data-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
