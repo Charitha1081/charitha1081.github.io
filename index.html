@@ -36,6 +36,8 @@ nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
 nav ul a{color:var(--muted)}
 nav ul a:hover{color:var(--ink);text-decoration:none}
 header{padding:88px 0 64px}
+.hero{display:grid;grid-template-columns:1fr 240px;gap:40px;align-items:center}
+.portrait{width:240px;height:240px;border-radius:50%;object-fit:cover;border:5px solid var(--surface);box-shadow:0 0 0 2px var(--accent),0 12px 30px rgba(0,0,0,.12)}
 .eyebrow{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--accent);letter-spacing:.04em}
 h1{font-family:Fraunces,serif;font-weight:700;font-size:clamp(40px,7vw,64px);line-height:1.05;margin:14px 0 18px;letter-spacing:-.02em}
 .lede{font-size:clamp(18px,2.4vw,21px);color:var(--muted);max-width:620px}
@@ -77,6 +79,8 @@ footer p{color:var(--muted)}
 .toggle{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:4px 10px;font-size:13px;cursor:pointer;margin-left:16px}
 @media (max-width:640px){
   nav ul{display:none}
+  .hero{grid-template-columns:1fr;gap:20px}
+  .portrait{width:132px;height:132px;order:-1}
   .stats{grid-template-columns:1fr}
   .job{grid-template-columns:1fr;gap:4px}
   .skills{grid-template-columns:1fr}
@@ -100,12 +104,17 @@ footer p{color:var(--muted)}
 
 <main class="wrap" id="top">
 <header>
+  <div class="hero">
+  <div>
   <div class="eyebrow">AI ENGINEER · DENTON, TX</div>
   <h1>I build AI systems that hold up under real use.</h1>
   <p class="lede">I'm an MS Data Science student at the <strong>University of North Texas</strong> (May 2027) with <strong>3 years of professional Python experience</strong>. I care about the parts most demos skip: load testing, evaluation, and reliability.</p>
   <div class="cta">
     <a class="btn primary" href="Charitha_Ande_Resume.pdf">Download resume</a>
     <a class="btn ghost" href="#projects">See my work</a>
+  </div>
+  </div>
+  <img class="portrait" src="charitha.jpg" alt="Charitha Ande" width="260" height="260">
   </div>
   <div class="stats">
     <div class="stat"><b>40%</b><span>less manual testing from frameworks I built at Colruyt</span></div>
